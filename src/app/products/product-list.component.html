@@ -1,0 +1,16 @@
+<table class='table table-striped table-bordered' *ngIf='products && products.length'>
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let product of products'>
+            <td>{{product.ProductName}}</td>
+            <td>{{product.ProductCode | lowercase}}</td>
+            <td>{{product.ProductPrice | currency:'USD':true:'1.2-2'}}</td>
+        </tr>
+    </tbody>
+</table>
