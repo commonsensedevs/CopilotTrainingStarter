@@ -6,7 +6,7 @@ on:
             - CheckPoint5
 env:
     AZURE_WEBAPP_NAME: 'CopilotTrainingStarter'
-    AZURE_WEBAPP_PACKAGE_PATH: './dist/CopilotTrainingStarter'
+    AZURE_WEBAPP_PACKAGE_PATH: '.'
 
 jobs:
     build-and-deploy:
